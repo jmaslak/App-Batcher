@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+
+#
+# Copyright (C) 2017 Joelle Maslak
+# All Rights Reserved - See License
+#
+
+# ABSTRACT: Batch command processor
+
+use Parallel::WorkUnit::Batcher::Boilerplate 'script';
+
+use Parallel::WorkUnit::Batcher;
+
+MAIN: {
+    my $batcher = Parallel::WorkUnit::Batcher->new();
+    $batcher->run();
+}
+
